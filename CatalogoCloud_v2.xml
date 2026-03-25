@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo_cloud empresa="TechNova Cloud">
+    <centro_datos ubicacion="Madrid" zona="eu-sur-1">
+        <servidor id="srv-web-01" rack="A1" estado="activo">
+            <hardware>
+                <cpu nucleos="16" arquitectura="x86_64">Intel Xeon Gold</cpu>
+                <ram unidad="GB">64</ram>
+                <discos>
+                    <disco tipo="NVMe" capacidad_tb="2" principal="true" />
+                </discos>
+            </hardware>
+            <software>
+                <so version="22.04">Ubuntu Server</so>
+                <servicios>
+                    <servicio puerto="80">Nginx HTTP</servicio>
+                </servicios>
+            </software>
+            <red>
+                <ip_fija>192.168.1.10</ip_fija>
+            </red>
+            <auditoria>
+                <tecnico>Juan Pérez</tecnico>
+                <fecha_revision>2026-03-20</fecha_revision>
+                <nota>Todo correcto.</nota>
+            </auditoria>
+        </servidor>
+    </centro_datos>
+</catalogo_cloud>
